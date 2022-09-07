@@ -133,3 +133,9 @@ double result = Math.Sqrt(Sqr(Coord2[0] - Coord1[0]) + Sqr(Coord2[1] - Coord1[1]
 System.Console.WriteLine(result);
 
 //end
+
+
+//Напишите программу, которая принимает на вход число (N) 
+//и выдаёт таблицу квадратов чисел от 1 до N.
+//5 -> 1, 4, 9, 16, 25.
+//2 -> 1,4
