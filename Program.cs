@@ -54,48 +54,48 @@
 //Напишите программу, которая по заданному номеру четверти, 
 //показывает диапазон возможных координат точек в этой четверти (x и y).
 
-int Prompt(string message)
-{
-    System.Console.Write(message);
-    string value = Console.ReadLine();
-    return Convert.ToInt32 (value);
-}
+// int Prompt(string message)
+// {
+//     System.Console.Write(message);
+//     string value = Console.ReadLine();
+//     return Convert.ToInt32 (value);
+// }
 
-bool ValidateQuarter(int Quarter)
-{
-    if (Quarter > 0 && Quarter < 5)
-    {
-         return true;
-    }
-         System.Console.WriteLine("ошибка ввода");
-    return false;
-}
+// bool ValidateQuarter(int Quarter)
+// {
+//     if (Quarter > 0 && Quarter < 5)
+//     {
+//          return true;
+//     }
+//          System.Console.WriteLine("ошибка ввода");
+//     return false;
+// }
 
-void GetQuarter(int Quarter)
-{
-       if (Quarter == 1)
-    {
-        System.Console.WriteLine("x > 0 & y > 0 ");
-    }
-         if (Quarter == 2)
-    {
-        System.Console.WriteLine("x < 0 & y > 0  ");
-    }
-        if (Quarter == 3)
-    {
-        System.Console.WriteLine("x < 0 & y < 0 ");
-    }
-         if (Quarter == 4)
-    {
-        System.Console.WriteLine("x > 0 & y < 0 ");
-    }
-}
+// void GetQuarter(int Quarter)
+// {
+//        if (Quarter == 1)
+//     {
+//         System.Console.WriteLine("x > 0 & y > 0 ");
+//     }
+//          if (Quarter == 2)
+//     {
+//         System.Console.WriteLine("x < 0 & y > 0  ");
+//     }
+//         if (Quarter == 3)
+//     {
+//         System.Console.WriteLine("x < 0 & y < 0 ");
+//     }
+//          if (Quarter == 4)
+//     {
+//         System.Console.WriteLine("x > 0 & y < 0 ");
+//     }
+// }
 
-int Q = Prompt ("Введите номер четверти  : ");
+// int Q = Prompt ("Введите номер четверти  : ");
 
-if (ValidateQuarter(Q))
-{
-    GetQuarter(Q);
-}
+// if (ValidateQuarter(Q))
+// {
+//     GetQuarter(Q);
+// }
 
 // End
