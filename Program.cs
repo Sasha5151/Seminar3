@@ -106,31 +106,31 @@
 //A (3,6); B (2,1) -> 5,09 
 //A (7,-5); B (1,-1) -> 7,21
 
-int Prompt(string message)
-{
-    System.Console.Write(message);
-    string value = Console.ReadLine();
-    return Convert.ToInt32(value);
-}
-//int []Coord2 = new int [2];
-int[] InputCoords(int n)
-{
-    int[] Coord = new int[2];
-    Coord[0] = Prompt($"Введите координаты {n} точки Х : ");
-    Coord[1] = Prompt($"Введите координаты {n} точки Y : ");
-    return Coord;
-}
-int Sqr(int n)
-{
-    return n * n;
-}
-int[] Coord1 = InputCoords(1);
-int[] Coord2 = InputCoords(2);
-//Coord2[0] = Prompt ("Введите координаты второй точки Х : ");
-//Coord2[1] = Prompt ("Введите координаты второй точки Y : ");
+// int Prompt(string message)
+// {
+//     System.Console.Write(message);
+//     string value = Console.ReadLine();
+//     return Convert.ToInt32(value);
+// }
+// //int []Coord2 = new int [2];
+// int[] InputCoords(int n)
+// {
+//     int[] Coord = new int[2];
+//     Coord[0] = Prompt($"Введите координаты {n} точки Х : ");
+//     Coord[1] = Prompt($"Введите координаты {n} точки Y : ");
+//     return Coord;
+// }
+// int Sqr(int n)
+// {
+//     return n * n;
+// }
+// int[] Coord1 = InputCoords(1);
+// int[] Coord2 = InputCoords(2);
+// //Coord2[0] = Prompt ("Введите координаты второй точки Х : ");
+// //Coord2[1] = Prompt ("Введите координаты второй точки Y : ");
 
-double result = Math.Sqrt(Sqr(Coord2[0] - Coord1[0]) + Sqr(Coord2[1] - Coord1[1]));
-System.Console.WriteLine(result);
+// double result = Math.Sqrt(Sqr(Coord2[0] - Coord1[0]) + Sqr(Coord2[1] - Coord1[1]));
+// System.Console.WriteLine(result);
 
 //end
 
@@ -139,3 +139,19 @@ System.Console.WriteLine(result);
 //и выдаёт таблицу квадратов чисел от 1 до N.
 //5 -> 1, 4, 9, 16, 25.
 //2 -> 1,4
+
+int Prompt(string message)
+{
+    System.Console.Write(message);
+    string value = Console.ReadLine();
+    return Convert.ToInt32(value);
+}
+
+int N = Prompt("Введите число :");
+for (int count = 1 ; count <= N ; count++)
+{
+    int result = count*count ;
+    System.Console.WriteLine(result);
+}
+
+//end
